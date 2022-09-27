@@ -2,8 +2,13 @@
 
 .blog-header {
   line-height: 1;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #17d4ec;
 }
+
+.color-me{
+  color:#17d4ec;
+}
+
 
 .blog-header-logo {
   font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
@@ -15,7 +20,7 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+  font-family: 'Qwitcher Grypen', cursive;
 }
 
 .display-4 {
@@ -43,6 +48,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
+  color: #2af868;
 }
 
 .nav-scroller .nav-link {
@@ -54,6 +60,7 @@ h1, h2, h3, h4, h5, h6 {
 .card-img-right {
   height: 100%;
   border-radius: 0 3px 3px 0;
+  color: #2af868;
 }
 
 .flex-auto {
@@ -85,7 +92,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .blog-post-meta {
   margin-bottom: 1.25rem;
-  color: #727272;
+  color: hsl(152, 94%, 45%);
 }
 
 /*
@@ -93,9 +100,9 @@ h1, h2, h3, h4, h5, h6 {
  */
 .blog-footer {
   padding: 2.5rem 0;
-  color: #727272;
+  color: #198754;
   text-align: center;
-  background-color: #f9f9f9;
+  background-color: #198754;
   border-top: .05rem solid #e5e5e5;
 }
 .blog-footer p:last-child {
