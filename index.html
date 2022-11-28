@@ -60,12 +60,15 @@
           </div>
         </div>
       </header>
+
     
       <div class="nav-scroller py-1 mb-2">
         <nav class="nav d-flex justify-content-between">
           <a class="p-2 link-secondary" href="aboutme.html">About Me</a>
           <a class="p-2 link-secondary" href="aboutme.html">Contact Info</a>
           <a class="p-2 link-secondary" href="projects.html">Projects</a>
+          <a class="p-2 link-secondary" href="#blog">Blog</a>
+          <a class="p-2 link-secondary" href="#featured">Featured Projects</a>
         </nav>
       </div>
     </div>
@@ -82,7 +85,7 @@
 </div>
 </div>
 
-<div class="row g-5">
+<div id="blog" class="row g-5">
   <div class="col-md-8">
     <h3 class="pb-4 mb-4 fst-italic border-bottom">
       <a class="p-2 link-secondary" href="#">My Work In Progress</a>
@@ -100,7 +103,7 @@
 
   </div>
     </div>
-    <div class="row g-5">
+    <div id="featured" class="row g-5">
       <div class="col-md-8">
         <h3 class="pb-4 mb-4 fst-italic border-bottom">
           <a class="p-2 link-secondary" href="#">Featured Projects</a>
@@ -184,7 +187,24 @@
   </p>
 </footer>
 
+<script>
+      async function loadPage(url, innerElement){
+        // load page
+        const res     = await fetch(url);
+        const content = await res.text();
+        const element = document.getElementById('content');
+        element.innerHTML = content;
 
+        // element scroll into view
+        if (innerElement) {            
+            scrollIntoView(innerElement);
+        }        
+    }
+
+    function scrollIntoView(id){
+        document.getElementById(id).scrollIntoView();
+    }
+</script>
     
   </body>
 </html>
