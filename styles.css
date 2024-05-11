@@ -1,0 +1,257 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+    margin-top: 50px; /* Added margin for better spacing */
+    margin-bottom: 20px; /* Added margin for better spacing */
+}
+p {
+    text-align: center;
+    margin-bottom: 50px; /* Added margin for better spacing */
+}
+a {
+    text-decoration: none; /* Removes underlines */
+    color: inherit; /* Inherits text color from the parent element */
+}
+a.back-link {
+    position: fixed; /* Fixed position */
+    bottom: 10px; /* Distance from the bottom of the screen */
+    left: 10px; /* Distance from the left of the screen */
+    text-decoration: none; /* Removes underline */
+    font-size: 100px;
+}
+a.cv {
+    position: fixed; /* Fixed position */
+    bottom: 10px; /* Distance from the bottom of the screen */
+    right: 10px; /* Distance from the left of the screen */
+    text-decoration: none; /* Removes underline */
+    font-size: 100px;
+}
+a:hover {
+    color: hsl(0, 3%, 72%);
+};
+
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+    /* Styles for devices with a maximum width of 600px (typical Android phone) */
+    h1 {
+        font-size: 24px;
+        margin-top: 20px; /* Adjusted margin for better spacing */
+        margin-bottom: 10px; /* Adjusted margin for better spacing */
+    }
+    p {
+        font-size: 16px;
+        margin-bottom: 30px; /* Adjusted margin for better spacing */
+    }
+
+    .container {
+        flex-direction: column; /* Change back to column layout for smaller screens */
+    }
+    .side-nav, .main-content {
+        width: 100%; /* Take up full width on smaller screens */
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Styles for devices with a width between 601px and 1024px */
+    h1 {
+        font-size: 36px;
+    }
+    p {
+        font-size: 18px;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: row; /* Changed from column to row */
+    height: 100vh;
+}
+
+.side-nav {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100%;
+    width: 50%; /* Covering half the page */
+    position: fixed; /* Changed from absolute to fixed */
+    top: 0;
+    right: 0;
+    overflow-y:hidden;
+}
+
+.side-nav a:hover{
+    color: hsl(0, 3%, 72%);
+}
+
+.main-content {
+    padding: 20px;
+    box-sizing: border-box;
+    width: 50%; /* Takes up the other half of the page */
+    overflow-y: hidden;
+    font-size: 100px;
+}
+
+.menu-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 140px;
+}
+
+.menu-item:hover {
+    background-color: white;
+}
+.about-me {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    height: 100%;
+    width: 50%; /* Covering half the page */
+    position: fixed; /* Changed from absolute to fixed */
+    top: 0;
+    right: 0;
+    overflow-y:hidden;
+}
+.gridp {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Displaying two cards per row */
+    justify-items: center;
+    align-items: center;
+    grid-gap: 30px; /* Adjusted gap between cards */
+    background-color: white;
+    color: black;
+    padding: 20px;
+    height: 100%;
+    width: 50%; /* Covering half the page */
+    position: fixed; /* Changed from absolute to fixed */
+    top: 0;
+    right: 0; 
+    overflow-y: auto; /* Enable scrolling if content exceeds the height */
+}
+  
+.projss {font-size: 100px;}
+  
+.projecta {
+font-size: 50px;
+color: #818181;
+}
+
+.youtube {
+   font-size: 20px;
+   color: #818181;
+}
+ .flip-card {
+   border-style: hidden;
+   background-color: transparent;
+   width: 300px;
+   height: 350px;
+   perspective: 1000px;
+   border-radius: 3px;
+ }
+ 
+ .flip-card-inner {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   transition: transform 0.4s;
+   transform-style: preserve-3d;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   border-radius: 3px;
+ }
+ 
+ .flip-card:hover .flip-card-inner {
+   transform: rotateY(180deg);
+   border-radius: 3px;
+ }
+ 
+ .flip-card-front,
+ .flip-card-back {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   backface-visibility: hidden;
+   border-radius: 3px;
+ }
+ 
+ .flip-card-front {
+   background-color: #bbb;
+   color: black;
+   border-radius: 3px;
+ }
+ 
+ .flip-card-back {
+   background-color: hsla(187, 56%, 22%, 0.937);
+   color: white;
+   transform: rotateY(180deg);
+   border-radius: 3px;
+ }
+
+ /*image*/
+ .projects {
+   width: fit-content;
+   border-radius: 3px;
+   height: 350px;
+   width: 300px;
+ }
+
+/* For mobile phones: */
+@media only screen and (min-width: 600px) {
+    /* For tablets and above, revert to two cards per row */
+    .gridp {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 600px) {
+/* For tablets: */
+.col-s-1 {width: 8.33%;}
+.col-s-2 {width: 16.66%;}
+.col-s-3 {width: 25%;}
+.col-s-4 {width: 33.33%;}
+.col-s-5 {width: 41.66%;}
+.col-s-6 {width: 50%;}
+.col-s-7 {width: 58.33%;}
+.col-s-8 {width: 66.66%;}
+.col-s-9 {width: 75%;}
+.col-s-10 {width: 83.33%;}
+.col-s-11 {width: 91.66%;}
+.col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+
+.page {
+column-count: 2;
+}
+.contact {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    height: 100%;
+    width: 50%; /* Covering half the page */
+    position: fixed; /* Changed from absolute to fixed */
+    top: 0;
+    right: 0;
+    overflow-y:hidden;
+}
