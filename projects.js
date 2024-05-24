@@ -1,6 +1,18 @@
 function showProjects(){
     let allProjects = [
         {
+            name: "Trivia Game",
+            imageUrl: "images/trivia.png",
+            websiteUrl: "https://mytriviagame.netlify.app/",
+            description: "This is a fun trivia game project I made for fun to practice my coding knowledge."
+        },
+        {
+            name: "Drag and Drop Tasks",
+            imageUrl: "images/dragdrop.png",
+            websiteUrl: "https://main--peaceful-gingersnap-271bef.netlify.app/",
+            description: "This is a small project I made to explore drag and drop functionality for a separate project."
+        },
+        {
             name: "Accessibility Tool",
             imageUrl: "images/accessibility.png",
             websiteUrl: "https://njfazal.github.io/RDF-Acc-Tool",
