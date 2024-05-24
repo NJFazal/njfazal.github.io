@@ -5,54 +5,56 @@ body {
 }
 h1 {
     text-align: center;
-    margin-top: 50px; /* Added margin for better spacing */
-    margin-bottom: 20px; /* Added margin for better spacing */
+    margin-top: 50px; 
+    margin-bottom: 20px; 
 }
 p {
     text-align: center;
-    margin-bottom: 50px; /* Added margin for better spacing */
+    margin-bottom: 50px; 
 }
 a {
-    text-decoration: none; /* Removes underlines */
-    color: inherit; /* Inherits text color from the parent element */
+    text-decoration: none; 
+    color: inherit; 
 }
 a.back-link {
-    position: fixed; /* Fixed position */
-    bottom: 10px; /* Distance from the bottom of the screen */
-    left: 10px; /* Distance from the left of the screen */
-    text-decoration: none; /* Removes underline */
+    position: fixed; 
+    bottom: 10px; 
+    left: 10px; 
+    text-decoration: none; 
     font-size: 100px;
 }
 a.cv {
-    position: fixed; /* Fixed position */
-    bottom: 10px; /* Distance from the bottom of the screen */
-    right: 10px; /* Distance from the left of the screen */
-    text-decoration: none; /* Removes underline */
-    font-size: 100px;
+    text-decoration: none; 
+    text-align: center; 
+    font-size: 50px;
 }
 a:hover {
     color: hsl(0, 3%, 72%);
 };
-
+.mailto{
+    display:block;
+    width:100px;
+    height:20px;
+  }
 
 /* Responsive styles */
 @media only screen and (max-width: 600px) {
     /* Styles for devices with a maximum width of 600px (typical Android phone) */
     h1 {
         font-size: 24px;
-        margin-top: 20px; /* Adjusted margin for better spacing */
-        margin-bottom: 10px; /* Adjusted margin for better spacing */
+        margin-top: 20px; 
+        margin-bottom: 10px; 
     }
     p {
         font-size: 16px;
-        margin-bottom: 30px; /* Adjusted margin for better spacing */
+        margin-bottom: 30px; 
     }
 
     .container {
-        flex-direction: column; /* Change back to column layout for smaller screens */
+        flex-direction: column; 
     }
     .side-nav, .main-content {
-        width: 100%; /* Take up full width on smaller screens */
+        width: 100%; 
     }
 }
 
@@ -68,7 +70,7 @@ a:hover {
 
 .container {
     display: flex;
-    flex-direction: row; /* Changed from column to row */
+    flex-direction: row; 
     height: 100vh;
 }
 
@@ -78,8 +80,8 @@ a:hover {
     padding: 20px;
     box-sizing: border-box;
     height: 100%;
-    width: 50%; /* Covering half the page */
-    position: fixed; /* Changed from absolute to fixed */
+    width: 50%; 
+    position: fixed;
     top: 0;
     right: 0;
     overflow-y:hidden;
@@ -92,8 +94,10 @@ a:hover {
 .main-content {
     padding: 20px;
     box-sizing: border-box;
-    width: 50%; /* Takes up the other half of the page */
+    width: 50%; 
     overflow-y: hidden;
+    overflow: hidden;
+    position: fixed;
     font-size: 100px;
 }
 
@@ -113,29 +117,29 @@ a:hover {
     color: black;
     padding: 20px;
     height: 100%;
-    width: 50%; /* Covering half the page */
-    position: fixed; /* Changed from absolute to fixed */
+    width: 50%; 
+    position: fixed; 
     top: 0;
     right: 0;
     overflow-y:hidden;
 }
 .gridp {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Displaying two cards per row */
+    grid-template-columns: repeat(2, 1fr); 
     justify-items: center;
     align-items: center;
-    grid-gap: 30px; /* Adjusted gap between cards */
+    grid-gap: 30px; 
     background-color: white;
     color: black;
     padding: 20px;
     height: 100%;
-    width: 50%; /* Covering half the page */
-    position: fixed; /* Changed from absolute to fixed */
+    width: 50%; 
+    position: fixed; 
     top: 0;
     right: 0; 
-    overflow-y: auto; /* Enable scrolling if content exceeds the height */
+    overflow-y: auto; 
 }
-  
+
 .projss {font-size: 100px;}
   
 .projecta {
@@ -153,7 +157,7 @@ color: #818181;
    width: 300px;
    height: 350px;
    perspective: 1000px;
-   border-radius: 3px;
+   border-radius: 30px;
  }
  
  .flip-card-inner {
@@ -164,12 +168,12 @@ color: #818181;
    transition: transform 0.4s;
    transform-style: preserve-3d;
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-   border-radius: 3px;
+   border-radius: 30px;
  }
  
  .flip-card:hover .flip-card-inner {
    transform: rotateY(180deg);
-   border-radius: 3px;
+   border-radius: 30px;
  }
  
  .flip-card-front,
@@ -178,26 +182,26 @@ color: #818181;
    width: 100%;
    height: 100%;
    backface-visibility: hidden;
-   border-radius: 3px;
+   border-radius: 30px;
  }
  
  .flip-card-front {
    background-color: #bbb;
    color: black;
-   border-radius: 3px;
+   border-radius: 30px;
  }
  
  .flip-card-back {
-   background-color: hsla(187, 56%, 22%, 0.937);
+   background-color: black;
    color: white;
    transform: rotateY(180deg);
-   border-radius: 3px;
+   border-radius: 30px;
  }
 
  /*image*/
  .projects {
    width: fit-content;
-   border-radius: 3px;
+   border-radius: 30px;
    height: 350px;
    width: 300px;
  }
@@ -249,8 +253,8 @@ column-count: 2;
     color: black;
     padding: 20px;
     height: 100%;
-    width: 50%; /* Covering half the page */
-    position: fixed; /* Changed from absolute to fixed */
+    width: 50%; 
+    position: fixed; 
     top: 0;
     right: 0;
     overflow-y:hidden;
