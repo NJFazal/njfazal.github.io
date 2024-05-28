@@ -1,10 +1,21 @@
 
+.lobster-regular {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #E7717D
   }
   h1 {
     text-align: center;
@@ -25,6 +36,7 @@ body {
     left: 10px;
     text-decoration: none;
     font-size: 100px;
+    font-family: "Lobster", sans-serif;
   }
   a.cv {
     text-decoration: none;
@@ -43,9 +55,10 @@ body {
     display: flex;
     flex-direction: row;
     height: 100vh;
+    font-family: "Lobster", sans-serif;
   }
   .side-nav {
-    background-color: white;
+    background-color: bisque;
     color: black;
     padding: 20px;
     box-sizing: border-box;
@@ -58,6 +71,7 @@ body {
   }
   .side-nav a:hover {
     color: hsl(0, 3%, 72%);
+    background-color: bisque;
   }
   .main-content {
     padding: 20px;
@@ -66,6 +80,7 @@ body {
     overflow-y: auto;
     position: fixed;
     font-size: 100px;
+    font-family: "Lobster", sans-serif;
   }
   .menu-item {
     padding: 10px;
@@ -78,7 +93,7 @@ body {
     background-color: white;
   }
   .about-me {
-    background-color: white;
+    background-color: bisque;
     color: black;
     padding: 20px;
     height: 100%;
@@ -94,7 +109,7 @@ body {
     justify-items: center;
     align-items: center;
     grid-gap: 30px; 
-    background-color: white;
+    background-color: bisque;
     color: black;
     padding: 20px;
     height: 100%;
@@ -103,6 +118,7 @@ body {
     top: 0;
     right: 0; 
     overflow-y: auto; 
+    font-family: "Montserrat", sans-serif;
   }
   .projss {
     font-size: 100px;
@@ -166,7 +182,7 @@ body {
     column-count: 2;
   }
   .contact {
-    background-color: white;
+    background-color: bisque;
     color: black;
     padding: 20px;
     height: 100%;
