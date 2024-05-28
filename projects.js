@@ -1,6 +1,12 @@
 function showProjects(){
     let allProjects = [
         {
+            name: "Character Sheet",
+            imageUrl: "images/dnd.png",
+            websiteUrl: "https://charactersheetgenerator.netlify.app/",
+            description: "This is a cool character sheet generator inspired by Mausritter. I added functionality allowing players to track stats. I personalized it for my friends because we add elements of several RPGs to our campaigns."
+        },
+        {
             name: "Trivia Game",
             imageUrl: "images/trivia.png",
             websiteUrl: "https://mytriviagame.netlify.app/",
