@@ -71,7 +71,7 @@ body {
   }
   .side-nav a:hover {
     color: hsl(0, 3%, 72%);
-    background-color: bisque;
+    background-color: transparent;
   }
   .main-content {
     padding: 20px;
