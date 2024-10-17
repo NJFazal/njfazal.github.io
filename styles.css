@@ -46,6 +46,9 @@ body {
   a:hover {
     color: hsl(0, 3%, 72%);
   }
+  form {
+    text-align: center;
+  }
   .mailto {
     display: block;
     width: 100px;

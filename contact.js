@@ -2,8 +2,7 @@ function showContact() {
 
     let contactMe = [
         {
-            imageUrl: "images/contactme.png",
-            email: "nicolejfazal@gmail.com"
+            imageUrl: "images/contactme.png"
         }
     ];
     let contactHTML = "";
@@ -13,11 +12,14 @@ function showContact() {
             <img src="${contactMethod.imageUrl}" style="width:40%; margin-left:auto; margin-right:auto;" alt="me">
             <div class="card-body">
                 <p class="card-text" style="text-align: center; font-size: 50px">
-                    <a href="mailto:${contactMethod.email}" style="text-decoration: none; color: inherit;">
-                        ${contactMethod.email}
-                    </a>
-                    <a style="text-decoration: none;" href="https://github.com/NJFazal">GitHub</a></br>
-                    <a style="text-decoration: none;" href="https://www.linkedin.com/in/nicole-fazal">LinkedIn</a>
+                                 <a style="text-decoration: none; text-align: center; font-size: 50px" href="https://github.com/NJFazal">GitHub</a></br>
+                    <a style="text-decoration: none; text-align: center; font-size: 50px" href="https://www.linkedin.com/in/nicole-fazal">LinkedIn</a>
+                <form action="https://formsubmit.co/nicolejfazal@gmail.com" method="POST">
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <input type="hidden" name="_next" value="https://nicolefazal.netlify.app/thankyou.html">
+                    <input type="text" name="message" placeholder="Write your message here!" required>
+                    <button type="submit">Send</button>
+                </form>
                 </p>
             </div>
  
