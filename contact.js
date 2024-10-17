@@ -17,6 +17,7 @@ function showContact() {
                 <form action="https://formsubmit.co/nicolejfazal@gmail.com" method="POST">
                     <input type="email" name="email" placeholder="Email Address" required>
                     <input type="hidden" name="_next" value="https://nicolefazal.netlify.app/thankyou.html">
+                    <input type="hidden" name="_captcha" value="false">
                     <input type="text" name="message" placeholder="Write your message here!" required>
                     <button type="submit">Send</button>
                 </form>
