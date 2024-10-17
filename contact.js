@@ -13,6 +13,7 @@ function showContact() {
             <div class="card-body">
                 <p class="card-text" style="text-align: center; font-size: 50px">
                 <form action="https://formsubmit.co/nicolejfazal@gmail.com" method="POST">
+                <input type="hidden" name="_template" value="box">
                     <a style="text-decoration: none; text-align: center; font-size: 50px" href="https://github.com/NJFazal">GitHub</a></br>
                     <a style="text-decoration: none; text-align: center; font-size: 50px" href="https://www.linkedin.com/in/nicole-fazal">LinkedIn</a><br>
                     <input type="email" name="email" placeholder="Email Address" required><br>
