@@ -9,14 +9,14 @@ function showAbout() {
     let aboutHTML = "";
     aboutMe.forEach(aboutme => {
         aboutHTML += `
-        <div class="card" style="background-color: bisque; width: 40rem; border: none; overflow-y: auto; padding:10px; padding-right:90px">
+        <div class="card" style="background-color: bisque; width: 50rem; border: none; overflow-y: auto; padding:10px; padding-right:90px">
   <img  src="${aboutme.imageUrl}" style="width:40%; margin-left:auto; margin-right:auto;" alt="me">
   <div class="card-body" style="padding:0px">
     <h1 style="text-align: center; font-size: 50px" >${aboutme.name}</h1>
-    <p class="card-text" style="text-align: center">${aboutme.description}</p>
+    <p class="card-text" style="text-align: center; font-size: 20px">${aboutme.description}</p>
   </div>
   <div class="card-body" style="text-align: center; text-decoration: none; font-size: 50px">
-  <a class="cv" href="images/NICOLE FAZAL.pdf">My CV</a>
+  <a class="cv" style="font-size: 50px" href="images/NICOLE FAZAL.pdf">My CV</a>
   </div>
 </div>
         `;

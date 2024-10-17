@@ -9,7 +9,7 @@ function showContact() {
     let contactHTML = "";
     contactMe.forEach(contactMethod => {
         contactHTML += `
-        <div class="card" style="background-color: bisque; width: 40rem; border: none">
+        <div class="card" style="background-color: bisque; width: 50rem; border: none">
             <img src="${contactMethod.imageUrl}" style="width:40%; margin-left:auto; margin-right:auto;" alt="me">
             <div class="card-body">
                 <p class="card-text" style="text-align: center; font-size: 50px">

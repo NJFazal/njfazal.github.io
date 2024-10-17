@@ -97,7 +97,7 @@ body {
     color: black;
     padding: 20px;
     height: 100%;
-    width: 50%;
+    width: 60%;
     position: fixed;
     top: 0;
     right: 0;
@@ -113,7 +113,24 @@ body {
     color: black;
     padding: 20px;
     height: 100%;
-    width: 50%; 
+    width: 75%; 
+    position: fixed; 
+    top: 0;
+    right: 0; 
+    overflow-y: auto; 
+    font-family: "Montserrat", sans-serif;
+  }
+  .gridb {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    justify-items: center;
+    align-items: center;
+    grid-gap: 30px; 
+    background-color: bisque;
+    color: black;
+    padding: 20px;
+    height: 100%;
+    width: 75%; 
     position: fixed; 
     top: 0;
     right: 0; 
@@ -186,7 +203,7 @@ body {
     color: black;
     padding: 20px;
     height: 100%;
-    width: 50%;
+    width: 60%;
     position: fixed;
     top: 0;
     right: 0;
