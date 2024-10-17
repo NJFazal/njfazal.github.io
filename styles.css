@@ -49,6 +49,10 @@ body {
   form {
     text-align: center;
   }
+  input {
+    border-radius: 5px;
+    font-size: 30px;
+  }
   .mailto {
     display: block;
     width: 100px;
