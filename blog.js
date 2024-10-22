@@ -2,8 +2,8 @@ function showBlogs(){
     let allBlogs = [
         {
             name: "First Blog",
-            youtubeUrl: "https://youtu.be/tzLRND5t76w?feature=shared",
-            description: "This is my first blog placeholder. Fun things to come!"
+            youtubeUrl: "https://youtu.be/eJ1ffovwlQg",
+            description: "This is my first video blog"
         },
     ];
     let blogsHTML = "";
