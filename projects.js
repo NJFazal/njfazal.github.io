@@ -1,6 +1,12 @@
 function showProjects(){
     let allProjects = [
         {
+            name: "Tarot Card Reader",
+            imageUrl: "images/tarot.png",
+            websiteUrl: "https://tarot-card-reader.netlify.app/",
+            description: "I got into the Halloween spirit and made a tarot card reader."
+        },
+        {
             name: "Character Sheet",
             imageUrl: "images/dnd.png",
             websiteUrl: "https://charactersheetgenerator.netlify.app/",
