@@ -40,7 +40,7 @@ function showProjects(){
             name: "Bad Bank",
             imageUrl: "images/badbank.png",
             websiteUrl: "https://jocular-shortbread-037189.netlify.app",
-            description: "This is a front end project that I did for MIT xPRO. With it, I demonstrated my knowledge of how to use react, bootstrap, carrying of context and state and general themes of front end development. As the name suggests, this is a 'bad bank' because it stores your data without a back end for all the world to see. That was our professor's sense of humor, with the task of making it into a better banking app for the full stack capstone project."
+            description: "This is a front end project that I did for MIT xPRO. Here I demonstrated how to use react, bootstrap, carrying of context and state and front end development. As the name suggests, this is a 'bad bank' because it stores your data without a back end for all the world to see."
         },
         {
             name: "Hanoi Tower Game",
